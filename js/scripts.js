@@ -40,7 +40,7 @@ const displayArtifacts = function () {
   });
 };
 
-// function to display the skill blurbs associated with selected skill
+// function to display the skill blurbs associated with selected skills
 const displayBlurbs = function () {
   document.querySelectorAll ('.skill-blurb').forEach (blurb => {
     if (checkedSkills.includes (blurb.getAttribute ('name'))) {
@@ -80,11 +80,8 @@ const artifactMarkup = portfolioContent.then (content => {
     artifactDiv = document.createElement ('div');
     artifactDiv.id = artifact.id;
     artifactDiv.setAttribute ('class', 'artifact');
-    document.body.appendChild (artifactDiv);
 
-    title = document.createElement ('h1');
-    title.innerHTML = artifact.title;
-    artifactDiv.appendChild (title);
+    document.querySelector ('#artifactContent').appendChild (artifactDiv);
 
     projectLink = document.createElement ('a');
     projectLink.setAttribute ('href', artifact.fullURL);
@@ -95,6 +92,10 @@ const artifactMarkup = portfolioContent.then (content => {
     thumbnail.setAttribute ('class', 'thumbnail');
     thumbnail.src = artifact.thumbnailURL;
     projectLink.appendChild (thumbnail);
+
+    title = document.createElement ('h2');
+    title.innerHTML = artifact.title;
+    artifactDiv.appendChild (title);
 
     artifactDiv.appendChild (skillDiv);
   });

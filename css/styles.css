@@ -1,6 +1,13 @@
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .thumbnail {
-  height: 300px;
-  width: 300px;
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   filter: drop-shadow(8px 8px 4px gray);
   transition: transform 0.2s
 }
@@ -9,6 +16,32 @@
   transform: scale(1.1)
 }
 
+#artifactContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 .artifact {
   display: none;
+  max-width: 300px;
+  min-width: 150px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+p, h1, h2, label {
+  font-family: "Roboto", Sans-serif
+  
+}
+
+h1, h2 {
+  color: #6ec1e4
+}
+
+label {
+  margin-right: 20px;
+}
+
+
