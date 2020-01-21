@@ -1,6 +1,12 @@
 .thumbnail {
   height: 300px;
   width: 300px;
+  filter: drop-shadow(8px 8px 4px gray);
+  transition: transform 0.2s
+}
+
+.thumbnail:hover {
+  transform: scale(1.1)
 }
 
 .artifact {
