@@ -1,0 +1,21 @@
+{"artifacts": [
+    {
+        "id": 0,
+        "title": "Modeling Racially Restrictive Covenants",
+        "thumbnailURL": "https://travisormsby.com/wp-content/uploads/2019/12/modeling-prejudice-e1576518372494.png",
+        "fullURL": "https://github.com/Ziiiiing/netlogo-GIS8501",
+        "skills": {
+            "Agent Based Modeling": "Using NetLogo, our team created an Agent-Based model to see how white preference for segregation and proximity to water might explain spatial patterns in the distribution of racially restrictive covenants",
+            "Cartography": "We made a map"
+        }
+    },
+    {
+        "id": 1,
+        "title": "Mapping Northwest Faerûn",
+        "thumbnailURL": "https://travisormsby.com/wp-content/uploads/2019/12/NW-Faerun-Preview-e1576220633253.png",
+        "fullURL": "https://travisormsby.com/wp-content/uploads/2019/05/NW_Faerun.pdf",
+        "skills": {
+            "Cartography": "Using a custom .stylex file, I was able to expand the types of possible visualizations and emulate a distictive cartographic style"
+        }
+    }
+]}

@@ -1,0 +1,8 @@
+.thumbnail {
+  height: 300px;
+  width: 300px;
+}
+
+.artifact {
+  display: none;
+}
