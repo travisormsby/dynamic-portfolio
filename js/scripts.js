@@ -1,5 +1,3 @@
-//TODO: dynamically display skill blurb text
-
 /*get the URL query parameters to set any skills to be checked on load.
 The query parameters need to be formatted '?skills='
 followed by a semicolon separated list of skills to check on load.
@@ -61,10 +59,10 @@ const portfolioContent = fetch (
 // create the artifact display divs for each artifact in the portfolio
 const artifactMarkup = portfolioContent.then (content => {
   content.artifacts.forEach (artifact => {
-    skillDiv = document.createElement ('div');
+    let skillDiv = document.createElement ('div');
 
-    Object.keys (artifact.skills).forEach (skill => {
-      skillText = document.createElement ('p');
+    Object.keys (artifact.skills).sort ().forEach (skill => {
+      let skillText = document.createElement ('p');
       skillText.setAttribute ('class', 'skill-blurb ');
       skillText.setAttribute ('name', skill);
       skillText.innerHTML = `<strong>${skill}:</strong> ${artifact.skills[skill]}`;
@@ -77,23 +75,24 @@ const artifactMarkup = portfolioContent.then (content => {
       }
     });
 
-    artifactDiv = document.createElement ('div');
+    let artifactDiv = document.createElement ('div');
     artifactDiv.id = artifact.id;
     artifactDiv.setAttribute ('class', 'artifact');
+    artifactDiv.style.order = 10 - artifact.rating; // order artifacts high to low based on rating
 
     document.querySelector ('#artifactContent').appendChild (artifactDiv);
 
-    projectLink = document.createElement ('a');
+    let projectLink = document.createElement ('a');
     projectLink.setAttribute ('href', artifact.fullURL);
     projectLink.setAttribute ('target', '_blank');
     artifactDiv.appendChild (projectLink);
 
-    thumbnail = document.createElement ('img');
+    let thumbnail = document.createElement ('img');
     thumbnail.setAttribute ('class', 'thumbnail');
     thumbnail.src = artifact.thumbnailURL;
     projectLink.appendChild (thumbnail);
 
-    title = document.createElement ('h2');
+    let title = document.createElement ('h2');
     title.innerHTML = artifact.title;
     artifactDiv.appendChild (title);
 
@@ -107,14 +106,42 @@ const artifactMarkup = portfolioContent.then (content => {
 
 // create checkboxes for each skill in the portfolio
 const skillMarkup = portfolioContent.then (() => {
-  skillDiv = document.querySelector ('#skillBoxes');
+  let skillDiv = document.querySelector ('#skillBoxes');
+
+  // create a checkbox to toggle all other boxes on/off
+  let toggleBox = document.createElement ('input');
+
+  toggleBox.type = 'checkbox';
+  toggleBox.id = 'toggleBox';
+  toggleBox.checked = false;
+
+  let toggleBoxLabel = document.createElement ('label');
+  toggleBoxLabel.setAttribute ('for', 'toggleBox');
+  toggleBoxLabel.innerHTML = 'Toggle all skills on/off';
+
+  const event = new Event ('change');
+
+  toggleBox.addEventListener ('change', function () {
+    document.querySelectorAll ('input[name="skill"').forEach (box => {
+      if (this.checked) {
+        box.checked = true;
+        box.dispatchEvent (event);
+      } else {
+        box.checked = false;
+        box.dispatchEvent (event);
+      }
+    });
+  });
+  skillDiv.appendChild (toggleBox);
+  skillDiv.appendChild (toggleBoxLabel);
 
   let skillCounter = 0;
 
-  Object.keys (skills).forEach (skill => {
-    checkBox = document.createElement ('input');
+  Object.keys (skills).sort ().forEach (skill => {
+    let checkBox = document.createElement ('input');
     checkBox.type = 'checkbox';
     checkBox.id = 'skill' + skillCounter;
+    checkBox.setAttribute ('name', 'skill');
     checkBox.value = skill;
     if (checkedSkills.includes (skill)) {
       checkBox.setAttribute ('checked', 'true');
@@ -129,12 +156,13 @@ const skillMarkup = portfolioContent.then (() => {
         checkedSkills.push (skill);
       } else {
         checkedSkills = checkedSkills.filter (item => item !== skill);
+        document.querySelector ('#toggleBox').checked = false; // if at least one checkbox is off, the all skills box should be unchecked
       }
       skillDisplay ();
       displayArtifacts ();
       displayBlurbs ();
     });
-    checkBoxLabel = document.createElement ('label');
+    let checkBoxLabel = document.createElement ('label');
     checkBoxLabel.setAttribute ('for', 'skill' + skillCounter);
     checkBoxLabel.innerHTML = skill;
     skillDiv.appendChild (checkBox);

@@ -7,7 +7,8 @@
             "fullURL": "https://github.com/Ziiiiing/netlogo-GIS8501",
             "skills": {
                 "Agent Based Modeling": "Use NetLogo to model how proximity to water features and white preference for segregation interact with spatial patterns in racially restrictive covenants "
-            }
+            },
+            "rating": 7
         },
         {
             "id": 1,
@@ -16,7 +17,8 @@
             "fullURL": "https://travisormsby.com/wp-content/uploads/2019/05/NW_Faerun.pdf",
             "skills": {
                 "Geovisualization": "Use a custom .stylex file in ArcGIS Pro to emulate a distinctive cartographic style"
-            }
+            },
+            "rating": 5
         },
         {
             "id": 2,
@@ -26,7 +28,8 @@
             "skills": {
                 "Python": "Our team used a Python script to implement a graph-cutting algorithm to gerrymander congressional districts",
                 "Geovisualization": "Automate map production with Matplotlib and Geopandas"
-            }
+            },
+            "rating": 9
         },
         {
             "id": 3,
@@ -35,7 +38,8 @@
             "fullURL": "https://travisormsby.com/wp-content/uploads/2019/05/Convert-Polygon-Shapefile-to-Graph.html",
             "skills": {
                 "Python": "Reimagine polygon shapefiles as graphs using PySal and NetworkX"
-            }
+            },
+            "rating": 8
         },
         {
             "id": 4,
@@ -44,7 +48,8 @@
             "fullURL": "https://travisormsby.com/wp-content/uploads/2019/05/Depth-First-Search-and-Breadth-First-Search.html",
             "skills": {
                 "Python": "Implement basic shortest path search algorithms written in pure Python data structures.  No need for fancy graph libraries"
-            }
+            },
+            "rating": 6
         },
         {
             "id": 5,
@@ -54,7 +59,8 @@
             "skills": {
                 "Python": "Query a Geopandas geodataframe",
                 "Geovisualization": "Use Folium to map data from a Geopandas geodataframe"
-            }
+            },
+            "rating": 6
         },
         {
             "id": 6,
@@ -64,7 +70,8 @@
             "skills": {
                 "Python": "Query tweets usings Twitter's Python API",
                 "Data Visualization": "Graph .csv files and Pandas dataframes with Matplotlib"
-            }
+            },
+            "rating": 6
         },
         {
             "id": 7,
@@ -74,7 +81,8 @@
             "skills": {
                 "Statistics": "Calculate the probability of achieving at least X, at most Y, or between X and Y successes in K attempts",
                 "Data Visualization": "Graph the output of a function with Matplotlib"
-            }
+            },
+            "rating": 5
         },
         {
             "id": 8,
@@ -84,7 +92,8 @@
             "skills": {
                 "Data Visualization": "Use shaded relief to enhance the meaning of non-spatial data",
                 "Geovisualization": "Winner, Best Cartography - Graduate Student.  2019 U-Spatial Mapping Prize."
-            }
+            },
+            "rating": 10
         },
         {
             "id": 9,
@@ -93,7 +102,8 @@
             "fullURL": "https://travisormsby.com/wp-content/uploads/2019/05/ormsby-bringing-transit-to-the-people.pdf",
             "skills": {
                 "Geovisualization": "Use a bivariate choropleth mapping scheme to visualize population and population density simultaneously"
-            }
+            },
+            "rating": 8
         },
         {
             "id": 10,
@@ -102,8 +112,9 @@
             "fullURL": "https://storymaps.arcgis.com/stories/661ea82b7fb24e6aafc34c65985cc83a",
             "skills": {
                 "Web GIS": "Use a Story Maps to present analysis of the effects of transit changes on marginalized populations",
-                "Public Speaking": "Use a Story Map to replace a PowerPoint deck at the 2019 Center for Transportation Studies annual conference"
-            }
+                "Public Speaking": "Presented at the 2019 Center for Transportation Studies annual conference"
+            },
+            "rating": 10
         },
         {
             "id": 11,
@@ -112,7 +123,8 @@
             "fullURL": "https://travisormsby.com/wp-content/uploads/2019/05/ormsby-otter-tail-county.pdf",
             "skills": {
                 "Geovisualization": "Stress-test the Maplex engine in ArcGIS Pro with the lakes of Otter Tail County"
-            }
+            },
+            "rating": 8
         },
         {
             "id": 12,
@@ -121,7 +133,8 @@
             "fullURL": "https://maps.umn.edu/transportation-happiness",
             "skills": {
                 "Web GIS": "Use Esri's JavaScript API to build a custom web app allowing fine-grained disaggregation of a large dataset"
-            }
+            },
+            "rating": 10
         },
         {
             "id": 13,
@@ -130,7 +143,41 @@
             "fullURL": "https://maps.umn.edu/climatehealthtool/heat_app/",
             "skills": {
                 "Web GIS": "Use Esri's JavaScript API to build a custom web app to help county planners prepare for climate change"
-            }
+            },
+            "rating": 10
+        },
+        {
+            "id": 14,
+            "title": "Spatial lag & spatial error models",
+            "thumbnailURL": "https://travisormsby.com/wp-content/uploads/2020/01/dayofdata-e1579637723961.png",
+            "fullURL": "https://github.com/travisormsby/day_of_data",
+            "skills": {
+                "Statistics": "Use R to correct OLS regression for spatial autocorrelation",
+                "Public Speaking": "Presented at the 2020 University of Minnesota Day of Data",
+                "Geovisualization": "Map data in R using GISTools",
+                "Teaching": "Use Binder to create environments for students to run Jupyter Notebooks online without installing software"
+            },
+            "rating": 9
+        },
+        {
+            "id": 15,
+            "title": "2015 Minnesota Urban Debate League Teacher-Coach of the year",
+            "thumbnailURL": "https://travisormsby.com/wp-content/uploads/2020/01/dayofdata-e1579637723961.png",
+            "fullURL": "https://github.com/travisormsby/day_of_data",
+            "skills": {
+                "Teaching": "Train students from a variety of backgrounds to excell in academically rigorous policy debate competition"
+            },
+            "rating": 9
+        },
+        {
+            "id": 16,
+            "title": "2017 Minnesota Urban Debate League Teacher-Coach of the year",
+            "thumbnailURL": "https://travisormsby.com/wp-content/uploads/2020/01/dayofdata-e1579637723961.png",
+            "fullURL": "https://github.com/travisormsby/day_of_data",
+            "skills": {
+                "Teaching": "Train students from a variety of backgrounds to excell in academically rigorous policy debate competition"
+            },
+            "rating": 9
         }
     ]
 }
