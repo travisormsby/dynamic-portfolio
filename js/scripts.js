@@ -117,7 +117,7 @@ const skillMarkup = portfolioContent.then (() => {
 
   let toggleBoxLabel = document.createElement ('label');
   toggleBoxLabel.setAttribute ('for', 'toggleBox');
-  toggleBoxLabel.innerHTML = 'Toggle all skills on/off';
+  toggleBoxLabel.innerHTML = '<span></span>Toggle all skills on/off';
 
   const event = new Event ('change');
 
@@ -164,7 +164,7 @@ const skillMarkup = portfolioContent.then (() => {
     });
     let checkBoxLabel = document.createElement ('label');
     checkBoxLabel.setAttribute ('for', 'skill' + skillCounter);
-    checkBoxLabel.innerHTML = skill;
+    checkBoxLabel.innerHTML = '<span></span>' + skill;
     skillDiv.appendChild (checkBox);
     skillDiv.appendChild (checkBoxLabel);
     skillCounter++;
