@@ -3,7 +3,7 @@ This small web app was created to help MGIS students at the University of Minnes
 
 The idea is that you might want to present a specific subset of portfolio items to a particular potential employer.  That way you can tailor your portfolio to the particular requirements of a position.
 
-The app works by reading information about portfolio artifacts from a json file called portfolio-content.json.  There is an example file in the repo that you can use as a template for your content.
+The app works by reading information about portfolio artifacts from a json file called portfolio-content.json.  There is an example file in the repo that you can use as a template for your content.  Importantly, you get to define all the skills you want to have.  You don't have to choose the same ones I have.  The app will use the skills you define in the json file to create the content on the page.
 
 An important, but non-obvious feature of the app is that it allows you to create URLs that will generate a page with specific skills already selected.  You can do that by putting ?skills= after the normal URL for wherever you're hosting the portfolio.html file.  After the = you should put a semicolon separated list of the skills you want to have preselected.  
 
