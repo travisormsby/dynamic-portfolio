@@ -142,7 +142,7 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked + label:hover {
     /* copy the states for onMouseOver to avoid flickering*/ }
     input[type="checkbox"]:checked + label:hover span {
-      background-color: ##1F7FA8;
+      background-color: #1F7FA8;
       transform: scale(1.25);
       /* enlarge the box*/ }
       input[type="checkbox"]:checked + label:hover span:after {
