@@ -42,7 +42,7 @@ p, h1, h2, label {
 }
 
 h1, h2 {
-  color: #6ec1e4
+  color: #1F7FA8
 }
 
 label {
@@ -68,7 +68,7 @@ label {
     width: 25px;
     height: 25px;
     transform-origin: center;
-    border: 2px solid #6ec1e4;
+    border: 2px solid #1F7FA8;
     border-radius: 50%;
     vertical-align: -8px;
     margin-right: 10px;
@@ -83,7 +83,7 @@ label span:before {
 	height: 2px;
 	border-radius: 2px;
       /* so that the tick has nice rounded look*/
-	background: #6ec1e4;
+	background: #1F7FA8;
 	position: absolute;
 	transform: rotate(45deg);
 	top: 13px;
@@ -100,7 +100,7 @@ label span:after {
 	height: 2px;
 	border-radius: 2px;
       /* so that the tick has nice rounded look*/
-	background: #6ec1e4;
+	background: #1F7FA8;
 	position: absolute;
 	transform: rotate(305deg);
 	top: 16px;
@@ -126,7 +126,7 @@ input[type="checkbox"] {
   /* hide the system checkbox*/
   /* Let's add some effects after the checkbox is checked*/ }
   input[type="checkbox"]:checked + label span {
-    background-color: #6ec1e4;
+    background-color: #1F7FA8;
     transform: scale(1.25);
     /* enlarge the box*/ }
     input[type="checkbox"]:checked + label span:after {
@@ -142,7 +142,7 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked + label:hover {
     /* copy the states for onMouseOver to avoid flickering*/ }
     input[type="checkbox"]:checked + label:hover span {
-      background-color: #6ec1e4;
+      background-color: ##1F7FA8;
       transform: scale(1.25);
       /* enlarge the box*/ }
       input[type="checkbox"]:checked + label:hover span:after {
